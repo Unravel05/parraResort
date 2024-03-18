@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+
+<form id="add-user-informatiom" action="/reservations" method="post">
+  <label>Name:</label>
+  <input type="text" name="name">
+
+  <label>Arrival:</label>
+  <input type="datetime-local">
+  <label>Departure:</label>
+  <input type="datetime-local">
+  <button type="submit">submit</button>
+</form>
+
+
+  <%- include('../partials/footer') %>

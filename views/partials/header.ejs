@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title><%= title %></title>
+</head>
+<body>
+  <nav>
+    <a href="/hotels"><img src="https://cdn-icons-png.flaticon.com/512/3009/3009710.png" id="hotelimg"></a>
+    <a href="/hotels/new" <%- title==='Choose a hotel' ? 'class="active"' : '' %>>PICK A HOTEL</a>
+    <a href="/print/new" <%- title==='Check your reservation' ? 'class="active"' : '' %>>YOUR RESERVATION</a>
+    <a href="/logout">LOG OUT</a>
+  </nav>
+  <main>
+    <h1><%= title %></h1>

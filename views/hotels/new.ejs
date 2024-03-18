@@ -1,0 +1,41 @@
+<%- include('../partials/header') %>
+
+<label>Select a Hotel:</label>
+
+<form id="add-reservation-form" action="/hotels" method="POST">
+
+    <select name="hotel" id="hotelsOptions">
+        <option value="Aries">Aries</option>
+        <option value="Taurus">Taurus</option>
+        <option value="Scorpio">Scorpio</option>
+        <option value="Libra">Libra</option>
+    </select>
+
+    <section id="badge-container"></section>
+      <label>room</label>
+      <select name="room" id="roomsOptions">
+          <option value="Jupiter">Jupiter</option>
+          <option value="Sun">Sun</option>
+          <option value="Moon">Moon</option>
+          <option value="Mars">Mars</option>
+      </select>
+      <label>view</label>
+      <select name="view" id="viewOptios">
+          <option value="Water">Water</option>
+          <option value="Garden">Garden</option>
+          <option value="Rise">Rise</option>
+          <option value="Standard">Standard</option>
+      </select>
+      <label>Hsk:</label>
+      <input type="checkbox" name="hsk" id="hsk">
+      <label>Accesible Room:</label>
+      <input type="checkbox" name="accesibleroom" id="accesibleroom">
+
+     <button type="submit" >Register</button>
+      <!-- Pregunta por que no se va a make reservations -->
+
+  
+
+</form>
+
+<%- include('../partials/footer') %>

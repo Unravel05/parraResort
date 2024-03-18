@@ -1,0 +1,16 @@
+
+<%- include('../partials/header') %>
+
+<h1>hola!</h1>
+
+<section id="show-page">
+    <div><%= reservation.hotel.hotel %></div>
+    <div><%= reservation.hotel.room %></div>
+    <div><%= reservation.hotel.view %></div>
+    <div><%= reservation.hotel.hsk ? 'Yes' : 'No' %></div>
+    <div><%= reservation.hotel.accesibleroom ? 'Yes' : 'No' %></div>
+</section>
+
+
+
+<%- include('../partials/footer') %>
