@@ -4,11 +4,30 @@
 <h1>hola!</h1>
 
 <section id="show-page">
-    <div><%= reservation.hotel.hotel %></div>
-    <div><%= reservation.hotel.room %></div>
-    <div><%= reservation.hotel.view %></div>
-    <div><%= reservation.hotel.hsk ? 'Yes' : 'No' %></div>
-    <div><%= reservation.hotel.accesibleroom ? 'Yes' : 'No' %></div>
+    <table>
+        <thead>
+            <tr>
+               <th><div>Hotel:</div></th> 
+                <th><div>Name:</div></th>
+                <th><div>Room:</div></th> 
+                <th><div>Arrival:</div></th>
+                <th><div>Departure:</div></th>
+                <th><div>View:</div></th>
+                <th><div>Hsk:</div></th>
+                <th><div>Accesible room: </div></th>
+            </tr>
+        </thead>
+        <tbody>
+            <td><div><%= reservation.hotel.hotel %> </div></td>
+            <td><div><%= reservation.name %></div></td>
+            <td><div><%= reservation.hotel.room %></div></td>
+            <td><div><%= reservation.arrival %></div></td>
+            <td><div><%= reservation.departure %></div></td>
+            <td><div> <%= reservation.hotel.view %></div></td>
+            <td><div><%= reservation.hotel.hsk ? 'Yes' : 'No' %></div></td>
+            <td><div><%= reservation.hotel.accesibleroom ? 'Yes' : 'No' %></div></td>
+        </tbody>
+    </table>
 </section>
 
 

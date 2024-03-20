@@ -1,12 +1,35 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{
+  background-color: rgb(221, 207, 227);
+  /* padding: 50px; */
+
 }
 
-a {
-  color: #00B7FF;
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: grid;
+}
+
+nav > a {
+  margin: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav > a:hover:not(.active) {
+  color: rgb(124, 94, 137);
+  background-color: #a58db1;
+}
+
+nav > a.active {
+  color: rgb(146, 115, 165);
+  cursor: default;
 }
 
 #hotelimg {
   height: 30px;
+}
+
+nav {
+  background-color: rgb(118, 79, 121);
 }

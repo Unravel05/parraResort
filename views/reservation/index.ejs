@@ -1,0 +1,37 @@
+<%- include('../partials/header') %>
+
+<table id="list">
+    <thead>
+        <tr>
+            <th>Hotel</th>
+            <th>Room</th>
+            <th>View</th>
+            <th>Hsk</th>
+            <th>Accesible Room</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% reservation.forEach(function(r) { %>
+            <tr>
+                <td><%= r.hotel.hotel %></td>
+                <td><%= r.name %></td>
+                <td><%= r.room %></td>
+                <td><%= r.arrival %></td>
+                <td><%= r.departure %></td>
+                <td><%= r.view %></td>
+                <td><%= r.hsk %></td>
+                <td><%= r.accesibleroom %></td>
+            </tr>
+            <td>
+                <form action="/reservation/<%= r._id %>?_method=DELETE" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+            <td>
+                <a href="/reservation/<%= r._id%>/edit"><button type="submit">Update</button></a>
+            </td>
+        <% }); %>
+    </tbody>
+</table>
+
+<%- include('../partials/footer') %>
