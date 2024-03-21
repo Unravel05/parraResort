@@ -1,6 +1,5 @@
 const Reservation = require('../models/reservation');
 const Hotel = require('../models/hotel');
-const hotel = require('../models/hotel');
 
 
 module.exports = {
@@ -45,7 +44,7 @@ async function create(req, res) {
         req.body.hotel = req.params.id 
         const reservation = await Reservation.create(req.body);
         reservation.save()
-        res.redirect(`/reservations/${reservation._id}`);
+        res.redirect(`/reservation/${reservation._id}`);
       } catch (err) {
         console.log(err);
         res.render('reservation/new', {title: 'Reservations Detail', errorMsg: err.message });
