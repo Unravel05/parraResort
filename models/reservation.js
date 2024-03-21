@@ -3,7 +3,13 @@ const Schema = mongoose.Schema;
 
 
 const reservationsSchema = new Schema ({
-    name: String,
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
+      },
+      userName: String,
+    }, {
     arrival: Date,
     departure: Date,
     hotel: {

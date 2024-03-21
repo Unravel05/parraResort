@@ -1,23 +1,27 @@
 *{
   background-color: rgb(221, 207, 227);
-  /* padding: 50px; */
+  padding: 5px;
 
 }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 2vh "Lucida Grande", Helvetica, Arial, sans-serif;
   display: grid;
 }
 
+nav {
+  background-color: rgb(118, 79, 121);
+}
+
 nav > a {
-  margin: 20px;
+  margin: 40px;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
 }
 
 nav > a:hover:not(.active) {
-  color: rgb(124, 94, 137);
+  color: rgb(118, 79, 121);
   background-color: #a58db1;
 }
 
@@ -27,9 +31,85 @@ nav > a.active {
 }
 
 #hotelimg {
-  height: 30px;
+  height: 3vh;
 }
 
-nav {
-  background-color: rgb(118, 79, 121);
+main {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+
+.hoteles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1%;
+  /* background-color: rgb(140, 93, 159); */
+}
+
+.hotel {
+  height: 55%;
+  width: 40%;
+  /* background-color: rgb(140, 93, 159); */
+  justify-content: center;
+}
+
+button.reserv {
+position: relative;
+align-content: center;
+}
+
+.titulo {
+  background-color: rgb(226, 184, 243);
+  text-align: center;
+  font-size: 140%;
+
+}
+
+.content {
+  text-align: justify;
+  margin-top: 5%;
+}
+
+#add-reservation-form {
+  margin-top: 10%;
+  /* margin-right: 30%; */
+  /* display: flex;
+  flex-wrap: wrap; */
+  align-content: center;
+  flex-direction: row;
+}
+
+#add-reservation-form title {
+justify-content: center;
+}
+
+#add-reservation-form .select {
+  display: flex;
+  flex-wrap: wrap;
+  height: 20%;
+  width: 50%;
+}
+
+/* #add-reservation-form .choose {
+
+} */
+
+#add-reservation-form button[type="submit"] {
+  flex-direction: column;
+  align-items: last baseline;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+}
+
+.login img {
+  height: 30px;
 }
