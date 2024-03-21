@@ -10,7 +10,7 @@ module.exports = {
 
 async function index(req, res) {
   const hotels = await Hotel.find({});
-  res.render('hotels/index', { title: 'All hotels', hotels })
+  res.render('hotels/index', { title: 'All hotels', class:"title", hotels })
 }
 
 async function show(req, res) {

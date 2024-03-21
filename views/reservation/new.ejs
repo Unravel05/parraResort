@@ -1,14 +1,14 @@
 <%- include('../partials/header') %>
 
 <form id="add-user-informatiom" action="/<%=hotel%>/reservations" method="post">
-  <label>Name:</label>
-  <input type="text" name="name">
+  <label class="label">Name:</label>
+  <input id="textn" type="text" name="name">
 
-  <label>Arrival:</label>
+  <label class="label">Arrival:</label>
   <input name="arrival" type="datetime-local">
-  <label>Departure:</label>
+  <label class="label">Departure:</label>
   <input name="departure" type="datetime-local">
-  <button type="submit">submit</button>
+  <button class="sub" type="submit">submit</button>
 </form>
 
 

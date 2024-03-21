@@ -35,7 +35,7 @@ async function index(req, res) {
 
 function newReservation(req, res) {
     const hotel = req.params.id
-    res.render('reservation/new', { title: 'Reservations Detail', hotel})
+    res.render('reservation/new', { title: 'Reservations Details', hotel})
 }
 
 async function create(req, res) {
@@ -47,13 +47,13 @@ async function create(req, res) {
         res.redirect(`/reservation/${reservation._id}`);
       } catch (err) {
         console.log(err);
-        res.render('reservation/new', {title: 'Reservations Detail', errorMsg: err.message });
+        res.render('reservation/new', {title: 'Reservations Details', errorMsg: err.message });
       }
 }
 
 async function show(req, res) {
     const reservation = await Reservation.findById(req.params.id).populate('hotel')
     console.log(reservation)
-    res.render('reservation/show', {title: 'Reservations Detail', reservation}
+    res.render('reservation/show', {title: 'Reservations Details', reservation}
     );
 }
