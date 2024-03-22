@@ -22,7 +22,7 @@ The Parra's Resort app is an exclusive tool designed for employees, streamlining
 
 # Getting Started
 
-[Click to Make your reservation!]([https://unravel05.github.io/Flowers-Memory/](https://parra-resorts-2c1df195267f.herokuapp.com/hotels))
+[Click to Make your reservation!](https://parra-resorts-2c1df195267f.herokuapp.com/hotels)
 
 # Next Steps
 
