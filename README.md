@@ -5,7 +5,7 @@ The Parra's Resort app is an exclusive tool designed for employees, streamlining
 
 # Screenshot
 
-<img src="[https://i.imgur.com/jelE4XX.png](https://imgur.com/CjQ3k7r)](https://i.imgur.com/mSnEvFl.png)">
+<img src="https://i.imgur.com/mSnEvFl.png">
 <img src="[https://i.imgur.com/3vAOhVz.png](https://imgur.com/yBvkiP0)">
 <img src="[https://i.imgur.com/HEzD932.png](https://imgur.com/mSnEvFl)">
 
