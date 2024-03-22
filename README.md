@@ -9,6 +9,8 @@ The Parra's Resort app is an exclusive tool designed for employees, streamlining
 
 # Technologies Used
 
+* Express.js
+* Trello
 * JavaScript
 * HTML
 * Css
