@@ -7,7 +7,6 @@ The Parra's Resort app is an exclusive tool designed for employees, streamlining
 <img src="https://i.imgur.com/CjQ3k7r.png">
 <img src="https://i.imgur.com/mSnEvFl.png">
 
-
 # Technologies Used
 
 * JavaScript
